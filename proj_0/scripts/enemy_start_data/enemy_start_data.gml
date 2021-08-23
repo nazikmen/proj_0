@@ -5,7 +5,7 @@ function enemy_start_data(enm_num){
 		case 0:{
 			opt = ds_map_create();
 			ds_map_add(opt,"name","jopa");
-			ds_map_add(opt,"hp",100);
+			ds_map_add(opt,"hp",10);
 			ds_map_add(opt,"speed",1);
 			ds_map_add(opt,"weapon",0);
 			ds_map_add(opt,"skill","");
@@ -48,7 +48,7 @@ function enemy_start_data(enm_num){
 		case 1:{
 			opt = ds_map_create();
 			ds_map_add(opt,"name","jopa");
-			ds_map_add(opt,"hp",100);
+			ds_map_add(opt,"hp",10);
 			ds_map_add(opt,"speed",1);
 			ds_map_add(opt,"weapon",0);
 			ds_map_add(opt,"skill","");
@@ -91,7 +91,7 @@ function enemy_start_data(enm_num){
 		case 2:{
 			opt = ds_map_create();
 			ds_map_add(opt,"name","jopa");
-			ds_map_add(opt,"hp",100);
+			ds_map_add(opt,"hp",10);
 			ds_map_add(opt,"speed",1);
 			ds_map_add(opt,"weapon",0);
 			ds_map_add(opt,"skill","");
@@ -134,7 +134,7 @@ function enemy_start_data(enm_num){
 		case 3:{
 			opt = ds_map_create();
 			ds_map_add(opt,"name","jopa");
-			ds_map_add(opt,"hp",100);
+			ds_map_add(opt,"hp",10);
 			ds_map_add(opt,"speed",1);
 			ds_map_add(opt,"weapon",0);
 			ds_map_add(opt,"skill","");
@@ -177,7 +177,7 @@ function enemy_start_data(enm_num){
 		case 4:{
 			opt = ds_map_create();
 			ds_map_add(opt,"name","jopa");
-			ds_map_add(opt,"hp",100);
+			ds_map_add(opt,"hp",10);
 			ds_map_add(opt,"speed",1);
 			ds_map_add(opt,"weapon",0);
 			ds_map_add(opt,"skill","");
@@ -220,7 +220,7 @@ function enemy_start_data(enm_num){
 		case 5:{
 			opt = ds_map_create();
 			ds_map_add(opt,"name","jopa");
-			ds_map_add(opt,"hp",100);
+			ds_map_add(opt,"hp",10);
 			ds_map_add(opt,"speed",1);
 			ds_map_add(opt,"weapon",0);
 			ds_map_add(opt,"skill","");
@@ -263,7 +263,7 @@ function enemy_start_data(enm_num){
 		case 6:{
 			opt = ds_map_create();
 			ds_map_add(opt,"name","jopa");
-			ds_map_add(opt,"hp",100);
+			ds_map_add(opt,"hp",10);
 			ds_map_add(opt,"speed",1);
 			ds_map_add(opt,"weapon",0);
 			ds_map_add(opt,"skill","");
@@ -306,7 +306,7 @@ function enemy_start_data(enm_num){
 		case 7:{
 			opt = ds_map_create();
 			ds_map_add(opt,"name","jopa");
-			ds_map_add(opt,"hp",100);
+			ds_map_add(opt,"hp",10);
 			ds_map_add(opt,"speed",1);
 			ds_map_add(opt,"weapon",0);
 			ds_map_add(opt,"skill","");
@@ -349,7 +349,7 @@ function enemy_start_data(enm_num){
 		case 8:{
 			opt = ds_map_create();
 			ds_map_add(opt,"name","jopa");
-			ds_map_add(opt,"hp",100);
+			ds_map_add(opt,"hp",10);
 			ds_map_add(opt,"speed",1);
 			ds_map_add(opt,"weapon",0);
 			ds_map_add(opt,"skill","");
@@ -392,7 +392,7 @@ function enemy_start_data(enm_num){
 		case 9:{
 			opt = ds_map_create();
 			ds_map_add(opt,"name","jopa");
-			ds_map_add(opt,"hp",100);
+			ds_map_add(opt,"hp",10);
 			ds_map_add(opt,"speed",1);
 			ds_map_add(opt,"weapon",0);
 			ds_map_add(opt,"skill","");
@@ -435,7 +435,7 @@ function enemy_start_data(enm_num){
 		case 10:{
 			opt = ds_map_create();
 			ds_map_add(opt,"name","jopa");
-			ds_map_add(opt,"hp",100);
+			ds_map_add(opt,"hp",10);
 			ds_map_add(opt,"speed",1);
 			ds_map_add(opt,"weapon",0);
 			ds_map_add(opt,"skill","");
@@ -478,7 +478,7 @@ function enemy_start_data(enm_num){
 		case 11:{
 			opt = ds_map_create();
 			ds_map_add(opt,"name","jopa");
-			ds_map_add(opt,"hp",100);
+			ds_map_add(opt,"hp",10);
 			ds_map_add(opt,"speed",1);
 			ds_map_add(opt,"weapon",0);
 			ds_map_add(opt,"skill","");
@@ -521,7 +521,7 @@ function enemy_start_data(enm_num){
 		case 12:{
 			opt = ds_map_create();
 			ds_map_add(opt,"name","jopa");
-			ds_map_add(opt,"hp",100);
+			ds_map_add(opt,"hp",10);
 			ds_map_add(opt,"speed",1);
 			ds_map_add(opt,"weapon",0);
 			ds_map_add(opt,"skill","");
@@ -564,7 +564,7 @@ function enemy_start_data(enm_num){
 		case 13:{
 			opt = ds_map_create();
 			ds_map_add(opt,"name","jopa");
-			ds_map_add(opt,"hp",100);
+			ds_map_add(opt,"hp",10);
 			ds_map_add(opt,"speed",1);
 			ds_map_add(opt,"weapon",0);
 			ds_map_add(opt,"skill","");
@@ -1854,14 +1854,14 @@ function enemy_start_data(enm_num){
 		case 43:{
 			opt = ds_map_create();
 			ds_map_add(opt,"name","jopa");
-			ds_map_add(opt,"hp",100);
+			ds_map_add(opt,"hp",250);
 			ds_map_add(opt,"speed",1);
 			ds_map_add(opt,"weapon",0);
 			ds_map_add(opt,"skill","");
 			ds_map_add(opt,"skill_timeout",10);
-			ds_map_add(opt,"damage",5);
-			ds_map_add(opt,"dm_timeout",2);
-			ds_map_add(opt,"price",10);
+			ds_map_add(opt,"damage",15);
+			ds_map_add(opt,"dm_timeout",7);
+			ds_map_add(opt,"price",120);
 			ds_map_add(opt,"weapon_type",0);
 			//opt2//
 			//opt3//
@@ -1940,14 +1940,14 @@ function enemy_start_data(enm_num){
 		case 45:{
 			opt = ds_map_create();
 			ds_map_add(opt,"name","jopa");
-			ds_map_add(opt,"hp",100);
+			ds_map_add(opt,"hp",200);
 			ds_map_add(opt,"speed",1);
 			ds_map_add(opt,"weapon",0);
 			ds_map_add(opt,"skill","");
 			ds_map_add(opt,"skill_timeout",10);
-			ds_map_add(opt,"damage",5);
-			ds_map_add(opt,"dm_timeout",2);
-			ds_map_add(opt,"price",10);
+			ds_map_add(opt,"damage",15);
+			ds_map_add(opt,"dm_timeout",9);
+			ds_map_add(opt,"price",100);
 			ds_map_add(opt,"weapon_type",0);
 			//opt2//
 			//opt3//

@@ -8,5 +8,4 @@ md = false;
 image_xscale = 2048;
 image_yscale = 2048;
 image_alpha = 0;
-
 begin_pos = [0,0]

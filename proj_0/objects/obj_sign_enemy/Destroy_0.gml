@@ -1,3 +1,6 @@
 /// @description Insert description here
-// You can write your code in this editor
-instance_create(irandom_range(0+sprite_width/2+25,room_width-sprite_width/2-25),50,obj_sign_enemy);
+var cnt = 0;
+
+with(obj_sign_enemy)cnt++
+
+if(cnt <= 1)with(obj_sing_controller)alarm[0] = 5*room_speed;

@@ -6,6 +6,7 @@ if(md){
 			
 			x=clamp(x+clamp((mouse_x-other.press_point[0])/10,-5,5),0+25+point_distance(x,0,bbox_right,0),room_width-point_distance(x,0,bbox_right,0)-25)
 			y=clamp(y+clamp((mouse_y-other.press_point[1])/10,-5,5),0+25+point_distance(0,y,0,bbox_top),room_height-25-point_distance(0,y,0,bbox_top))
+			
 			var dist_x = other.begin_pos[0]-x;
 			var dist_y = other.begin_pos[1]-y;
 			//nwrl

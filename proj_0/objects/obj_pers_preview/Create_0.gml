@@ -40,7 +40,7 @@ with instance_create (bbox_right+sprite_get_width(spr_strel)/2,y,obj_btn_dlg)
 		functional_var = ">";
 	}
 	
-with instance_create (global.view_x+sprite_get_width(spr_btn)/2,global.game_height-sprite_get_height(spr_btn)/2,obj_btn_dlg) 
+with instance_create (global.view_x+sprite_get_width(spr_btn)/2,global.game_height-sprite_get_height(spr_btn)/2-((global.game_height-room_height)/2),obj_btn_dlg) 
 	{
 		depth = other.depth-1;
 		sprite_index = spr_btn;
@@ -48,7 +48,7 @@ with instance_create (global.view_x+sprite_get_width(spr_btn)/2,global.game_heig
 		depth=other.depth-1;
 		loc_text_key = "btn_menu";
 	}
-with instance_create (room_width+((global.game_width-room_width)/2)-sprite_get_width(spr_btn)/2,global.game_height-sprite_get_height(spr_btn)/2,obj_btn_dlg) 
+with instance_create (room_width+((global.game_width-room_width)/2)-sprite_get_width(spr_btn)/2,global.game_height-sprite_get_height(spr_btn)/2-((global.game_height-room_height)/2),obj_btn_dlg) 
 	{
 		depth = other.depth-1;
 		sprite_index = spr_btn;

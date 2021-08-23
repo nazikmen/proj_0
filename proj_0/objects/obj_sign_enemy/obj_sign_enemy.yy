@@ -10,7 +10,7 @@
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
-  "physicsShape": 1,
+  "physicsShape": 0,
   "physicsGroup": 1,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
@@ -19,7 +19,10 @@
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
   "physicsKinematic": false,
-  "physicsShapePoints": [],
+  "physicsShapePoints": [
+    {"x":43.0,"y":43.0,},
+    {"x":43.0,"y":43.0,},
+  ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_sign_enemy","path":"objects/obj_sign_enemy/obj_sign_enemy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_sign_enemy","path":"objects/obj_sign_enemy/obj_sign_enemy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
@@ -32,6 +35,7 @@
     {"isDnD":false,"eventNum":11,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_sign_enemy","path":"objects/obj_sign_enemy/obj_sign_enemy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_sign_enemy","path":"objects/obj_sign_enemy/obj_sign_enemy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":2,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_sign_enemy","path":"objects/obj_sign_enemy/obj_sign_enemy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":5,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_sign_enemy","path":"objects/obj_sign_enemy/obj_sign_enemy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
