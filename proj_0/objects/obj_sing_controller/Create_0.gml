@@ -6,8 +6,8 @@ instance_create(room_width/2,room_height-20-sprite_get_height(spr_tower)/2,obj_t
 with instance_create (50,50,obj_btn_dlg,-2001) 
 	{
 		sprite_index = spr_btn;
-		scr=goto_main_menu;
-		loc_text_key = "btn_menu";
+		scr=get_dlg_invertory_sign;
+		btn_text = "inv";
 	}
 
 depth = 99;

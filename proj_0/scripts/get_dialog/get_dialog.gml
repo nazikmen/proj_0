@@ -37,21 +37,23 @@ case "sign_invertory":{
 		sprite_index = spr_btn;
 		scr=scr_sghp_upgrade;
 		depth=other.depth-1;
-		btn_text = "Up HP\nPrice: "+string(obj_player_sign.max_hp/2.8);
+		btn_text = "Up HP\nPrice: "+string(round(obj_player_sign.max_hp/2.8));
+		if(obj_player_sign.coins<round(obj_player_sign.max_hp/2.8))image_blend = c_red;
 	}
 	arr=get_dlg_btn_pos(3);
 	with instance_create (arr[0],arr[1],obj_btn_dlg) 
 	{
-		get_locale_spr_flag(global.locale);
+		sprite_index = spr_btn;
 		scr=scr_sgdm_upgrade;
 		depth=other.depth-1;
-		btn_text = "Up damage\nPrice: "+string(obj_player_sign.damage*1.3);
+		btn_text = "Up damage\nPrice: "+string(round(obj_player_sign.damage*1.3));
+		if(obj_player_sign.coins<round(obj_player_sign.damage*1.3))image_blend = c_red;
 	}
 	arr=get_dlg_btn_pos(4);
 	with instance_create (arr[0],arr[1],obj_btn_dlg) 
 	{
-		get_locale_spr_flag(global.locale);
-		scr=scr_sgdm_upgrade;
+		sprite_index = spr_btn;
+		scr=goto_menu;
 		depth=other.depth-1;
 		btn_text = "Exit";
 	}

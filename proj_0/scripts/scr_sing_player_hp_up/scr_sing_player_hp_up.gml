@@ -8,4 +8,5 @@ function scr_sing_player_hp_up(){
 				hp = max_hp;
 		}
 	}
+	if(obj_player_sign.coins<round(obj_player_sign.max_hp/2.8))image_blend = c_red;
 }

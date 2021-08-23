@@ -74,6 +74,7 @@
     {"id":{"name":"spr_char15","path":"sprites/spr_char15/spr_char15.yy",},"order":7,},
     {"id":{"name":"spr_char24","path":"sprites/spr_char24/spr_char24.yy",},"order":17,},
     {"id":{"name":"instance_create","path":"scripts/instance_create/instance_create.yy",},"order":5,},
+    {"id":{"name":"get_dlg_invertory_sign","path":"scripts/get_dlg_invertory_sign/get_dlg_invertory_sign.yy",},"order":2,},
     {"id":{"name":"obj_text_dlg","path":"objects/obj_text_dlg/obj_text_dlg.yy",},"order":2,},
     {"id":{"name":"spr_error","path":"sprites/spr_error/spr_error.yy",},"order":0,},
     {"id":{"name":"spr_flags","path":"sprites/spr_flags/spr_flags.yy",},"order":6,},

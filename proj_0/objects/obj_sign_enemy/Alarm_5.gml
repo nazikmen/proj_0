@@ -7,8 +7,8 @@
 
 enemy_start_data(image_index);
 name = opt[?"name"];
-hp = opt[?"hp"];
-max_hp = opt[?"hp"];
+hp = opt[?"hp"]+(round(obj_player_sign.damage*0.3)+round(obj_player_sign.max_hp*0.1))*round(obj_sing_controller.wv*0.3);
+max_hp = hp;
 spd = opt[?"speed"];
 weapon_type = opt[?"weapon_type"];
 weapon = opt[?"weapon"];
