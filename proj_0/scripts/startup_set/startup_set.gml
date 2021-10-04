@@ -1,6 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function startup_set(){
+	global.round_speed = 0.3;
 	gml_pragma("global", "startup_set()");
 	global.dev_mode = true;
 	global.localess = ds_list_create();
