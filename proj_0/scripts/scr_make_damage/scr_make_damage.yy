@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "game",
+    "path": "folders/Scripts/game.yy",
   },
   "resourceVersion": "1.0",
-  "name": "get_player_spritesheet",
+  "name": "scr_make_damage",
   "tags": [],
   "resourceType": "GMScript",
 }

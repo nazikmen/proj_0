@@ -4,8 +4,20 @@ function startup_set(){
 	gml_pragma("global", "startup_set()");
 	global.dev_mode = true;
 	global.localess = ds_list_create();
-	global.damage = 1;
 	ds_list_add(global.localess,"en","ru");
+	
+	if(file_exists("userdata.data")){
+		global.ud = ds_map_secure_load("userdata.data");
+		global.damage = global.ud[?"user_damage"];
+	}
+	else{
+		global.ud = ds_map_create();
+		ds_map_add(global.ud,"user_damage",1);
+		ds_map_secure_save(global.ud,"userdata.data")
+		
+		global.damage = global.ud[?"user_damage"];
+	}
+	
 	if(file_exists("options.cnfg")){
 		global.options_map = ds_map_secure_load("options.cnfg");
 		
@@ -18,6 +30,7 @@ function startup_set(){
 		ds_map_add(global.options_map,"locale","en");
 		ds_map_add(global.options_map,"sound",1);
 		ds_map_add(global.options_map,"music",1);
+		ds_map_add(global.options_map,"user_damage",1);
 		ds_map_secure_save(global.options_map,"options.cnfg")
 		
 		
@@ -40,5 +53,11 @@ function options_save(){
 	global.options_map[?"sound"]=global.sound;
 	global.options_map[?"music"]=global.music;
 	global.options_map[?"locale"]=global.locale;
+	global.options_map[?"user_damage"]=global.damage;
 	ds_map_secure_save(global.options_map,"options.cnfg");
+}
+
+function ud_save(){
+	global.ud[?"user_damage"]=global.damage;
+	ds_map_secure_save(global.ud,"userdata.data");
 }

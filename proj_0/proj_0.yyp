@@ -6,7 +6,6 @@
     {"id":{"name":"obj_btn","path":"objects/obj_btn/obj_btn.yy",},"order":2,},
     {"id":{"name":"get_dialog","path":"scripts/get_dialog/get_dialog.yy",},"order":0,},
     {"id":{"name":"obj_dev","path":"objects/obj_dev/obj_dev.yy",},"order":8,},
-    {"id":{"name":"get_player_spritesheet","path":"scripts/get_player_spritesheet/get_player_spritesheet.yy",},"order":9,},
     {"id":{"name":"obj_rm_start","path":"objects/obj_rm_start/obj_rm_start.yy",},"order":0,},
     {"id":{"name":"obj_mt_pool","path":"objects/obj_mt_pool/obj_mt_pool.yy",},"order":1,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":0,},
@@ -36,6 +35,7 @@
     {"id":{"name":"instance_create","path":"scripts/instance_create/instance_create.yy",},"order":5,},
     {"id":{"name":"obj_text_dlg","path":"objects/obj_text_dlg/obj_text_dlg.yy",},"order":2,},
     {"id":{"name":"spr_error","path":"sprites/spr_error/spr_error.yy",},"order":0,},
+    {"id":{"name":"scr_make_damage","path":"scripts/scr_make_damage/scr_make_damage.yy",},"order":0,},
     {"id":{"name":"spr_flags","path":"sprites/spr_flags/spr_flags.yy",},"order":6,},
     {"id":{"name":"spr_white_pixel","path":"sprites/spr_white_pixel/spr_white_pixel.yy",},"order":2,},
     {"id":{"name":"sd","path":"scripts/sd/sd.yy",},"order":1,},
@@ -87,6 +87,7 @@
     {"folderPath":"folders/Scripts/localiz.yy","order":7,"resourceVersion":"1.0","name":"localiz","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/enemys.yy","order":41,"resourceVersion":"1.0","name":"enemys","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/game.yy","order":9,"resourceVersion":"1.0","name":"game","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/game.yy","order":8,"resourceVersion":"1.0","name":"game","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
