@@ -4,6 +4,7 @@ function startup_set(){
 	gml_pragma("global", "startup_set()");
 	global.dev_mode = true;
 	global.localess = ds_list_create();
+	global.damage = 1;
 	ds_list_add(global.localess,"en","ru");
 	if(file_exists("options.cnfg")){
 		global.options_map = ds_map_secure_load("options.cnfg");
