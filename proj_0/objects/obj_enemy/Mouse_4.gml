@@ -7,7 +7,13 @@ if(!md){
 	image_yscale = 2.9;
 	if(hp==0){
 		instance_destroy()
+		global.enemy_killed_session++;
+		global.enemy_killed_buffer++;
+		if(global.enemy_killed_buffer==10){
+			global.enemy_killed_buffer=0;
+			global.lvl++;
+		}
 		global.damage++;
-		instance_create(room_width/2,room_height/2,obj_enemy,0);
+		ins_enemy();
 	}
 }

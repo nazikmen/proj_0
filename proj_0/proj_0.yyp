@@ -29,6 +29,7 @@
     {"id":{"name":"fnt_default","path":"fonts/fnt_default/fnt_default.yy",},"order":0,},
     {"id":{"name":"clean_resource","path":"scripts/clean_resource/clean_resource.yy",},"order":2,},
     {"id":{"name":"guiset","path":"sprites/guiset/guiset.yy",},"order":8,},
+    {"id":{"name":"ins_enemy","path":"scripts/ins_enemy/ins_enemy.yy",},"order":1,},
     {"id":{"name":"load_sprite","path":"scripts/load_sprite/load_sprite.yy",},"order":0,},
     {"id":{"name":"spr_sound","path":"sprites/spr_sound/spr_sound.yy",},"order":7,},
     {"id":{"name":"spr_gui_frame_strip","path":"sprites/spr_gui_frame_strip/spr_gui_frame_strip.yy",},"order":5,},
