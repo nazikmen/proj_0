@@ -1,1 +1,0 @@
-if(obj_joystick.md or obj_joystick.used_kb)pre_pos = [x,y]

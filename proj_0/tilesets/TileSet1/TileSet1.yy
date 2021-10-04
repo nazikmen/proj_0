@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_bg_tileset",
-    "path": "sprites/spr_bg_tileset/spr_bg_tileset.yy",
-  },
+  "spriteId": null,
   "tileWidth": 64,
   "tileHeight": 64,
   "tilexoff": 0,

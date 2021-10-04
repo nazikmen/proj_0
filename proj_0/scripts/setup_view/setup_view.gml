@@ -1,17 +1,17 @@
 function setup_view() {
 	// setup_view(); ресайз игры в зависимости от расширения экрана
-	global.ref_width = 1024;
-	global.ref_height = 512;
-	global.max_width = 1440;
-	global.max_height = 800;
+	global.ref_width = 512;
+	global.ref_height = 1024;
+	global.max_width = 800;
+	global.max_height = 1440;
 
 	var cam = view_get_camera(0);
 	var dw = window_get_width();
 	var dh = window_get_height();
-	if(dw < dh) {
-		var v_dw = dw
-		dw = dh
-		dh = v_dw
+	if(dh < dw) {
+		var v_dh = dh
+		dh = dw
+		dw = v_dh
 	}
 	if(dw<1||dh<1)return 0
 
