@@ -46,6 +46,8 @@ function setup_view() {
 	global.game_height = game_height
 	global.view_x = game_dx
 	global.view_y = game_dy
+	global.view_x_2 = global.game_width+global.view_x
+	global.view_y_2 = global.game_height+global.view_y
 	global.display_w = curr_dw
 	global.display_h = curr_dh
 }

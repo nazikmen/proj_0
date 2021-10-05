@@ -8,6 +8,7 @@
     {"id":{"name":"obj_dev","path":"objects/obj_dev/obj_dev.yy",},"order":3,},
     {"id":{"name":"obj_rm_start","path":"objects/obj_rm_start/obj_rm_start.yy",},"order":0,},
     {"id":{"name":"obj_mt_pool","path":"objects/obj_mt_pool/obj_mt_pool.yy",},"order":1,},
+    {"id":{"name":"obj_invertory_controller","path":"objects/obj_invertory_controller/obj_invertory_controller.yy",},"order":5,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":0,},
     {"id":{"name":"spr_enemys","path":"sprites/spr_enemys/spr_enemys.yy",},"order":0,},
     {"id":{"name":"obj_ramka","path":"objects/obj_ramka/obj_ramka.yy",},"order":4,},
