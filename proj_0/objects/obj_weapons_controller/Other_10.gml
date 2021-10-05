@@ -9,9 +9,8 @@ for (var i=0;i<ds_list_size(list_weapons);i++)
 		depth=obj_enemy.depth-1;
 		sprite_index=spr_weapons;
 		image_index=irandom(142);
-		image_xscale=2;
-		image_yscale=2;
 	}
+
 
 
 
