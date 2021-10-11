@@ -70,10 +70,28 @@ function ud_save(){
 }
 
 function ud_get(ud_name,global_name,default_val){
-	variable_global_set(global_name,global.ud[?ud_name]);
+	if(ds_map_is_list(global.ud,ud_name)){
+		var arr = [];
+		for(var i=0;i<ds_list_size(global.ud[?ud_name]);i++){
+			array_push(arr,global.ud[?ud_name][|i]);
+		}
+		ds_list_destroy(global.ud[?ud_name]);
+		global.ud[?ud_name] = arr;
+		variable_global_set(global_name,global.ud[?ud_name]);
+	}
+	else variable_global_set(global_name,global.ud[?ud_name]);
 	if(variable_global_get(global_name)==undefined){
 		ds_map_add(global.ud,ud_name,default_val);
-		variable_global_set(global_name,global.ud[?ud_name]);
+		if(ds_map_is_list(global.ud,ud_name)){
+			var arr = [];
+			for(var i=0;i<ds_list_size(global.ud[?ud_name]);i++){
+				array_push(arr,global.ud[?ud_name][|i]);
+			}
+			ds_list_destroy(global.ud[?ud_name]);
+			global.ud[?ud_name] = arr;
+			variable_global_set(global_name,global.ud[?ud_name]);
+		}
+		else variable_global_set(global_name,global.ud[?ud_name]);
 		ud_save();
 	}
 }

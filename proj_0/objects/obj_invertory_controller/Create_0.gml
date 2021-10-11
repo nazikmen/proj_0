@@ -1,10 +1,5 @@
 event_inherited();
-sd("j==================="+string(global.jopa))
-sd("j==================="+string(global.jopa1))
-if(ds_map_is_list(global.ud,"jopa")){
-	sd(global.jopa[|2]);
-	sd("blyat!")
-}
+sd("======="+string(global.milts_king_staff))
 y_ysvig = 0;
 y_need_sdvig=0;
 md=false;
