@@ -87,8 +87,29 @@ function get_ud_list(){
 	["coins","coins",0],
 	["s_coins","s_coins",0]
 	)
+	
+	//weapons [ud_name,global_name,[...]]
+	//... [type,ind,effect]
+	ds_list_add(ds,
+	["milts_king_staff","milts_king_staff",["staff",100,1]],
+	["emerald_halberd","emerald_halberd",["axe",101,1]],
+	["fireheart_staff","fireheart_staff",["staff",102,1]],
+	)
 	return ds;
+}	
+
+function get_weapons_info(ind){
+	//return [name(string),default dmg(int), type(string),]
+	switch ind
+	{
+	case 100: return ["milts_king_staff",1,"staff"];
+	case 101: return ["emerald_halberd",2,"axe"];
+	case 102: return ["fireheart_staff",3,"staff"];
+	}
+	
 }
+
+	
 
 function options_save(){
 	global.options_map[?"sound"]=global.sound;
