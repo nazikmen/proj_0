@@ -25,6 +25,7 @@
     {"id":{"name":"goto_main_menu","path":"scripts/goto_main_menu/goto_main_menu.yy",},"order":3,},
     {"id":{"name":"obj_btn_dlg","path":"objects/obj_btn_dlg/obj_btn_dlg.yy",},"order":0,},
     {"id":{"name":"startup_set","path":"scripts/startup_set/startup_set.yy",},"order":3,},
+    {"id":{"name":"gm_advance","path":"extensions/gm_advance/gm_advance.yy",},"order":0,},
     {"id":{"name":"rm_template","path":"rooms/rm_template/rm_template.yy",},"order":3,},
     {"id":{"name":"obj_close_dlg","path":"objects/obj_close_dlg/obj_close_dlg.yy",},"order":3,},
     {"id":{"name":"get_dlg_btn_pos","path":"scripts/get_dlg_btn_pos/get_dlg_btn_pos.yy",},"order":1,},
