@@ -8,6 +8,9 @@ if(md){
 				if(mouse_y == clamp(mouse_y,cl_y[0],cl_y[1])){
 					if(mdx==clamp(mdx,d[|i][0]-30,d[|i][0]+30) and mdy = clamp(mdy,d[|i][1]-30+y_ysvig,d[|i][1]+30+y_ysvig))
 					sd("clicked on item: "+string(d[|i][2])+"\ncount: "+string(d[|i][3]));
+					with(instance_create(x,y,obj_invertory_details,depth-1)){
+						
+					}
 					break;
 				}
 			}

@@ -12,6 +12,7 @@
     {"id":{"name":"obj_invertory_controller","path":"objects/obj_invertory_controller/obj_invertory_controller.yy",},"order":0,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":0,},
     {"id":{"name":"spr_enemys","path":"sprites/spr_enemys/spr_enemys.yy",},"order":0,},
+    {"id":{"name":"obj_invertory_details","path":"objects/obj_invertory_details/obj_invertory_details.yy",},"order":1,},
     {"id":{"name":"obj_ramka","path":"objects/obj_ramka/obj_ramka.yy",},"order":4,},
     {"id":{"name":"spr_btn","path":"sprites/spr_btn/spr_btn.yy",},"order":1,},
     {"id":{"name":"get_weapons_loc_text","path":"scripts/get_weapons_loc_text/get_weapons_loc_text.yy",},"order":1,},
