@@ -5,10 +5,10 @@ _y=room_height/2;
 r=200;
 ind=0;
 dir=0;
-dmg=0;
+dmg=1;
 flag=false;
 path = noone;
-attack_spd=irandom(90);
+attack_spd=irandom_range(10,90);
 busy=false;
 
 

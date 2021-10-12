@@ -1,5 +1,4 @@
 event_inherited();
-sd("======="+string(global.milts_king_staff))
 y_ysvig = 0;
 y_need_sdvig=0;
 md=false;
@@ -10,28 +9,13 @@ image_xscale=1000;
 image_yscale=1000;
 ds_inv = ds_list_create();
 line_cnt = 1;
-for(var i=0;i<100;i++){
+for(var i=0;i<20;i++){
+	//[x,y,index,item_cnt,rare,name,damage]
 	var a = irandom(50);
-	ds_list_add(ds_inv,[0,0,i,a]);
+	var rare = irandom(5);
+	var name = choose("a","b","c","d","e","f","g");
+	var dm = irandom(100);
+	ds_list_add(ds_inv,[0,0,i,a,rare,name,dm]);
 }
-ds_list_sort_array(ds_inv,3,false);
-y_shag = 90;
-x_shag = 70;
-st_p = [global.view_x+x_shag,global.view_y+200];
-
-var max_x = global.view_x_2-x_shag-35;
-for(var i=0;i<ds_list_size(ds_inv);i++){
-	ds_inv[|i][0]=st_p[0];
-	ds_inv[|i][1]=st_p[1];
-	if(st_p[0]<=max_x)st_p[0]+=x_shag;
-	else{
-		st_p[0]=global.view_x+x_shag;
-		st_p[1]+=y_shag;
-		line_cnt++;
-	}
-}
-st_p = [global.view_x+x_shag,global.view_y+200];
-
-/*
-ds_list_clear(ds_inv);
-ds_list_copy(ds_inv,d);
+arr_ind_to_sort = 3;
+event_user(1);

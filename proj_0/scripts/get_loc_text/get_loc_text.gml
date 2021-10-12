@@ -72,5 +72,25 @@ function get_loc_text(key){
 				}
 			}
 		}
+		case "text_cnt":{
+			switch (global.locale){
+				case "en":{
+					return "pc.";	
+				}
+				case "ru":{
+					return "шт.";	
+				}
+			}
+		}
+		case "lorem50":{
+			switch (global.locale){
+				case "en":{
+					return "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia tortor vel nisi condimentum placerat. Duis dolor elit, commodo at dictum eu, maximus et nibh. Morbi consectetur ante et euismod facilisis. Donec diam augue, vehicula sagittis dignissim eu, bibendum accumsan ipsum. Sed vulputate elit in leo molestie, at fringilla quam.";	
+				}
+				case "ru":{
+					return "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia tortor vel nisi condimentum placerat. Duis dolor elit, commodo at dictum eu, maximus et nibh. Morbi consectetur ante et euismod facilisis. Donec diam augue, vehicula sagittis dignissim eu, bibendum accumsan ipsum. Sed vulputate elit in leo molestie, at fringilla quam.";	
+				}
+			}
+		}
 	}
 }

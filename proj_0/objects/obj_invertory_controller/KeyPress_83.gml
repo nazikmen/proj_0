@@ -1,0 +1,1 @@
+instance_create(x,y,obj_inv_sort_type_choose,depth-1);
