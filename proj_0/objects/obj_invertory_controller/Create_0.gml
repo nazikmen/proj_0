@@ -9,7 +9,12 @@ image_xscale=1000;
 image_yscale=1000;
 ds_inv = ds_list_create();
 line_cnt = 1;
-for(var i=0;i<20;i++){
+ind_sort_cnt = false;
+ind_sort_dmg = false;
+ind_sort_rare = false;
+sort_napr = ind_sort_cnt;
+smeschenie_sortirovki = [10,0,0]
+for(var i=0;i<70;i++){
 	//[x,y,index,item_cnt,rare,name,damage]
 	var a = irandom(50);
 	var rare = irandom(5);

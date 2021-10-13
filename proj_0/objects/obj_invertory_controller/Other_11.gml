@@ -1,6 +1,6 @@
 /// @description sort invertory
 line_cnt = 1;
-ds_list_sort_array(ds_inv,arr_ind_to_sort,false);
+ds_list_sort_array(ds_inv,arr_ind_to_sort,sort_napr);
 y_shag = 90;
 x_shag = 70;
 st_p = [global.view_x+x_shag,global.view_y+200];

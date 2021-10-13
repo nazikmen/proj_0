@@ -1,5 +1,7 @@
 if(md){
 	if(mode == "" or mode == "click"){
+		
+		
 		var d = ds_inv;
 		var cl_y = [st_p[1]-60,global.view_y_2-200+60];
 		for(var i=0;i<ds_list_size(d);i++){

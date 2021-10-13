@@ -27,4 +27,12 @@ for(var i=0;i<ds_list_size(d);i++){
 }
 shader_reset();
 
-draw_sprite(spr_back,0,global.view_x+sprite_get_width(spr_back)/2,global.view_y_2-sprite_get_height(spr_back)/2);
+var sm = smeschenie_sortirovki;
+var dx = global.view_x+sprite_get_width(spr_back)/2
+draw_sprite(spr_back,0,dx,global.view_y_2-sprite_get_height(spr_back)/2);
+dx = dx+sprite_get_width(spr_back)/2+sprite_get_width(spr_sort_cnt)/2;
+draw_sprite(spr_sort_cnt,ind_sort_cnt,dx,global.view_y_2-sprite_get_height(spr_sort_cnt)/2-smeschenie_sortirovki[0]);
+dx = dx+sprite_get_width(spr_sort_cnt)/2+sprite_get_width(spr_sort_damage)/2;
+draw_sprite(spr_sort_damage,ind_sort_dmg,dx,global.view_y_2-sprite_get_height(spr_sort_damage)/2-smeschenie_sortirovki[1]);
+dx = dx+sprite_get_width(spr_sort_damage)/2+sprite_get_width(spr_sort_rare)/2;
+draw_sprite(spr_sort_rare,ind_sort_rare,dx,global.view_y_2-sprite_get_height(spr_sort_rare)/2-smeschenie_sortirovki[2]);
