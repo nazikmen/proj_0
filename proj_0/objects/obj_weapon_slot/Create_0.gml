@@ -8,6 +8,7 @@ dir=0;
 dmg=1;
 flag=false;
 path = noone;
+info=noone;
 attack_spd=irandom_range(10,90);
 busy=false;
 

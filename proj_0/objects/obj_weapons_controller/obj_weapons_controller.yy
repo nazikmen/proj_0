@@ -20,6 +20,8 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_weapons_controller","path":"objects/obj_weapons_controller/obj_weapons_controller.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_weapons_controller","path":"objects/obj_weapons_controller/obj_weapons_controller.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":104,"eventType":10,"collisionObjectId":null,"parent":{"name":"obj_weapons_controller","path":"objects/obj_weapons_controller/obj_weapons_controller.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":105,"eventType":10,"collisionObjectId":null,"parent":{"name":"obj_weapons_controller","path":"objects/obj_weapons_controller/obj_weapons_controller.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
