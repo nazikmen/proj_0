@@ -259,6 +259,7 @@
     {"CopyToMask":-1,"filePath":"datafiles/weapons","resourceVersion":"1.0","name":"weapons_239.png","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/weapons","resourceVersion":"1.0","name":"weapons_240.png","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/weapons","resourceVersion":"1.0","name":"weapons_241.png","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/weapons","resourceVersion":"1.0","name":"weapons_slot.png","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2.3.1.542",
