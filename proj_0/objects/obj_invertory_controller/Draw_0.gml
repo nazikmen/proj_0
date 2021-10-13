@@ -26,3 +26,5 @@ for(var i=0;i<ds_list_size(d);i++){
 	
 }
 shader_reset();
+
+draw_sprite(spr_back,0,global.view_x+sprite_get_width(spr_back)/2,global.view_y_2-sprite_get_height(spr_back)/2);

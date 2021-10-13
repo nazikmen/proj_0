@@ -9,3 +9,8 @@ draw_text_ext_color(global.view_x+20,global.view_y+70,string(global.s_coins),10,
 draw_line_width_color(bbox_left-3,bbox_top-15,bbox_right+3,bbox_top-15,20,c_dkgray,c_dkgray);
 draw_line_width_color(bbox_left+2,bbox_top-15,bbox_right-2,bbox_top-15,13,c_gray,c_gray);
 draw_line_width_color(bbox_left+2,bbox_top-15,lerp(bbox_left+2,bbox_right-2,clamp(hp/start_hp,0,1)),bbox_top-15,13,c_red,c_red);
+if(is_boss){
+	draw_line_width_color(bbox_left-3,bbox_bottom+15,bbox_right+3,bbox_bottom+15,20,c_dkgray,c_dkgray);
+	draw_line_width_color(bbox_left+2,bbox_bottom+15,bbox_right-2,bbox_bottom+15,13,c_gray,c_gray);
+	draw_line_width_color(bbox_left+2,bbox_bottom+15,lerp(bbox_left+2,bbox_right-2,clamp(timer/(30*room_speed),0,1)),bbox_bottom+15,13,c_red,c_red);
+}

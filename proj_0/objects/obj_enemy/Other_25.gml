@@ -12,6 +12,6 @@ if(hp==0){
 		global.enemy_killed_buffer=0;
 		global.lvl++;
 	}
-	global.damage++;
+	//global.damage++;
 	ins_enemy();
 }

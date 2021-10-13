@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"spr_close","path":"sprites/spr_close/spr_close.yy",},"order":3,},
+    {"id":{"name":"spr_invertory","path":"sprites/spr_invertory/spr_invertory.yy",},"order":46,},
     {"id":{"name":"scr_switch_locale","path":"scripts/scr_switch_locale/scr_switch_locale.yy",},"order":1,},
     {"id":{"name":"obj_dmg_drop","path":"objects/obj_dmg_drop/obj_dmg_drop.yy",},"order":2,},
     {"id":{"name":"ds_list_sort_array","path":"scripts/ds_list_sort_array/ds_list_sort_array.yy",},"order":9,},
@@ -54,6 +55,7 @@
     {"id":{"name":"obj_mt","path":"objects/obj_mt/obj_mt.yy",},"order":0,},
     {"id":{"name":"obj_weapons_controller","path":"objects/obj_weapons_controller/obj_weapons_controller.yy",},"order":0,},
     {"id":{"name":"setup_view","path":"scripts/setup_view/setup_view.yy",},"order":4,},
+    {"id":{"name":"spr_back","path":"sprites/spr_back/spr_back.yy",},"order":45,},
     {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},"order":0,},
   ],
   "Options": [

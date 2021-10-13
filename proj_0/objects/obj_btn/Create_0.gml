@@ -4,3 +4,6 @@ event_inherited();
 md=false;
 cnt=0;
 anim=false;
+scr=noone;
+text="";
+loc_text = true;

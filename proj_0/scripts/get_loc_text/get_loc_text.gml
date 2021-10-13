@@ -82,6 +82,16 @@ function get_loc_text(key){
 				}
 			}
 		}
+		case "invertory_btn":{
+			switch (global.locale){
+				case "en":{
+					return "Invertory.";	
+				}
+				case "ru":{
+					return "Инвертарь";	
+				}
+			}
+		}
 		case "lorem50":{
 			switch (global.locale){
 				case "en":{

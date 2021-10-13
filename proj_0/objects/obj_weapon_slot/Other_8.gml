@@ -3,5 +3,5 @@
 if(path_exists(path))path_delete(path);
 busy=false;
 flag=false;
-dmg = power(10,irandom_range(1,2));
+dmg = 50;
 scr_make_damage(dmg,1);

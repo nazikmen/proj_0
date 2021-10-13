@@ -42,20 +42,36 @@ function startup_set(){
 		for(var i=0;i<ds_list_size(l);i++){
 			ud_get(l[|i][0],l[|i][1],l[|i][2]);
 		}
+		
 	}
 	else{
-		global.ud = ds_map_create();
-		var l = global.ud_cr_list;
-		for(var i=0;i<ds_list_size(l);i++){
-			ud_get(l[|i][0],l[|i][1],l[|i][2]);
-		}
-		ds_map_secure_save(global.ud,"userdata.data")
+		ud_reset();
 	}
 	//
 	
 	sd("start game: "+string(GM_version)+" runtime: "+string(GM_runtime_version)+" build_date: "+string(GM_build_date));
 	global.loaded_sprites = ds_queue_create();
 	randomize();
+}
+
+function ud_reset(){
+	if(variable_global_exists("ud")){
+		if(ds_exists(global.ud,ds_type_map)){
+			ds_map_clear(global.ud);
+			ds_map_destroy(global.ud);
+			global.ud=-1;
+			global.enemy_killed_session = 0;
+			global.enemy_killed_buffer = 0;
+		}
+	}
+	
+	global.ud = ds_map_create();
+	var l = global.ud_cr_list;
+	for(var i=0;i<ds_list_size(l);i++){
+		ud_get(l[|i][0],l[|i][1],l[|i][2]);
+		
+	}
+	ds_map_secure_save(global.ud,"userdata.data")
 }
 
 function ud_save(){
@@ -92,7 +108,7 @@ function ud_get(ud_name,global_name,default_val){
 			variable_global_set(global_name,global.ud[?ud_name]);
 		}
 		else variable_global_set(global_name,global.ud[?ud_name]);
-		ud_save();
+		
 	}
 }
 
