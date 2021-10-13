@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_inv_locker_bg",
-    "path": "sprites/spr_inv_locker_bg/spr_inv_locker_bg.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -28,7 +25,6 @@
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_weapon_inventory_slots","path":"objects/obj_weapon_inventory_slots/obj_weapon_inventory_slots.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":5,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_weapon_inventory_slots","path":"objects/obj_weapon_inventory_slots/obj_weapon_inventory_slots.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_weapon_inventory_slots","path":"objects/obj_weapon_inventory_slots/obj_weapon_inventory_slots.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_weapon_inventory_slots","path":"objects/obj_weapon_inventory_slots/obj_weapon_inventory_slots.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
