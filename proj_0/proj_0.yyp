@@ -42,6 +42,7 @@
     {"id":{"name":"load_sprite","path":"scripts/load_sprite/load_sprite.yy",},"order":0,},
     {"id":{"name":"spr_sound","path":"sprites/spr_sound/spr_sound.yy",},"order":7,},
     {"id":{"name":"spr_gui_frame_strip","path":"sprites/spr_gui_frame_strip/spr_gui_frame_strip.yy",},"order":5,},
+    {"id":{"name":"obj_weapon_inventory_slots","path":"objects/obj_weapon_inventory_slots/obj_weapon_inventory_slots.yy",},"order":3,},
     {"id":{"name":"instance_create","path":"scripts/instance_create/instance_create.yy",},"order":5,},
     {"id":{"name":"obj_text_dlg","path":"objects/obj_text_dlg/obj_text_dlg.yy",},"order":2,},
     {"id":{"name":"spr_error","path":"sprites/spr_error/spr_error.yy",},"order":0,},
