@@ -3,6 +3,7 @@
 _x=room_width/2;
 _y=room_height/2;
 r=200;
+mt_global=true;
 ind=0;
 dir=0;
 dmg=1;
