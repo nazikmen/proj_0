@@ -37,4 +37,3 @@ function ds_list_sort_array(d,pos,por){
 	ds_list_clear(d_z);
 	ds_list_clear(ds_rez);
 }
-
