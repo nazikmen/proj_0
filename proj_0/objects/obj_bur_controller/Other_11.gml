@@ -4,6 +4,7 @@
 
 active_grids[4][0] = word_gen_grid(active_grids[4][1][0],active_grids[4][1][1]);//центральный грид
 active_grid = active_grids[4][0];
+active_surf=active_grids[4][2];
 //g0 g1 g2
 //g3 x4 g5
 //g6 g7 g8

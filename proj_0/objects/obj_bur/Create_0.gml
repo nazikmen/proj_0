@@ -41,13 +41,17 @@ perehod_na_new_grid = function(_x,_y){
 			event_user(2);
 			for(var i=0;i<array_length(active_grids);i++){
 				if(ds_exists(active_grids[i][0],ds_type_grid))ds_grid_destroy(active_grids[i][0]);
+				if(surface_exists(active_grids[i][2]))surface_free(active_grids[i][2]);
 			}
 			active_grid_pos = get_active_sector(_x,_y);
 			active_grid = -1;
-			active_grids = [[-1,[0,0]],			[-1,[0,0]],			 [-1,[0,0]],  //g0 g1 g2
-							[-1,[0,0]],[active_grid,active_grid_pos],[-1,[0,0]],  //g3 x4 g5
-							[-1,[0,0]],			[-1,[0,0]],			[-1,[0,0]]];  //g6 g7 g8
+			active_surf=-1;
+			active_grids = [[-1,[0,0],-1],			[-1,[0,0],-1],			 [-1,[0,0],-1],  //g0 g1 g2
+							[-1,[0,0],-1],[active_grid,active_grid_pos,active_surf],[-1,[0,0],-1],  //g3 x4 g5
+							[-1,[0,0],-1],			[-1,[0,0],-1],			[-1,[0,0],-1]];  //g6 g7 g8
 			event_user(1);
 		}
 	}
 }
+	
+instance_create(x,y,obj_joystick);

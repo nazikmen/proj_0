@@ -2,12 +2,23 @@
 //y=lerp(y,need_y,0.2);
 if(!finished_step){
 	//alarm[0]=1;
+	var pre_pos = [x,y];
 	mp_linear_step(need_x,need_y,spd,false);
+	with(obj_joystick){
+		x-=pre_pos[0]-other.x;
+		mdx-=pre_pos[0]-other.x;
+		y-=pre_pos[1]-other.y;
+		mdy-=pre_pos[1]-other.y;
+	}
 	var p = get_grid_pos();
 	if(x == need_x and y == need_y){
 		
 		x-=x%64;
 		y-=y%64;
+		with(obj_joystick){
+			x=other.x;
+			y=other.y;
+		}
 		with(obj_bur_controller){
 			//0 air
 			//1 grass
@@ -37,6 +48,7 @@ if(!finished_step){
 					break;
 				}
 			}
+			surface_free(active_surf);
 		}
 		finished_step=true;
 	}

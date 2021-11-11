@@ -62,7 +62,7 @@ if(file_exists("player_info.map")){
 	var mm = ds_map_secure_load("player_info.map");
 	var _x = mm[?"x"];
 	var _y = mm[?"y"];
-	mm[?"coins"]=global.coins;
+	global.coins=mm[?"coins"];
 	ds_map_destroy(mm);
 	_x-=_x%64;
 	_y-=_y%64;
@@ -80,9 +80,10 @@ else {
 
 active_grid_pos = get_active_sector(player_pos[0],player_pos[1]);
 active_grid = -1;
-active_grids = [[-1,[0,0]],			[-1,[0,0]],			 [-1,[0,0]],  //g0 g1 g2
-				[-1,[0,0]],[active_grid,active_grid_pos],[-1,[0,0]],  //g3 x4 g5
-				[-1,[0,0]],			[-1,[0,0]],			[-1,[0,0]]];  //g6 g7 g8
+active_surf=-1;
+active_grids = [[-1,[0,0],-1],			[-1,[0,0],-1],			 [-1,[0,0],-1],  //g0 g1 g2
+				[-1,[0,0],-1],[active_grid,active_grid_pos,active_surf],[-1,[0,0],-1],  //g3 x4 g5
+				[-1,[0,0],-1],			[-1,[0,0],-1],			[-1,[0,0],-1]];  //g6 g7 g8
 event_user(1);
 				
 
