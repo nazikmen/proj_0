@@ -1,5 +1,6 @@
 x-=x%64;
 y-=y%64;
+image_index=0;
 need_x=x;
 need_y=y;
 spd = 5;
