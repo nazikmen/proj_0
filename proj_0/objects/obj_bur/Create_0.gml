@@ -4,7 +4,13 @@ need_x=x;
 need_y=y;
 spd = 5;
 finished_step=true;
-
+drill_frame = 0;
+alarm[0]=10;
+wave_rad = 0;
+wave_act = false;
+cam_sdvig = [0,0];
+zoom=false;
+zoomed = true;
 check_can_move = function(_x,_y){
 	with(obj_bur_controller){
 		_x-=active_grid_pos[0];
@@ -54,4 +60,5 @@ perehod_na_new_grid = function(_x,_y){
 	}
 }
 	
-instance_create(x,y,obj_joystick);
+alarm[1]=1;
+

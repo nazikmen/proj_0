@@ -1,6 +1,8 @@
 /// @description load
-x=256;
-y=512;
+if(room!=rm_bur){
+	x=256;
+	y=512;
+}
 scr=instance_create(x,y,obj_screenlock);
 scr.par_obj = id;
 scr.ue = 0;

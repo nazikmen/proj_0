@@ -4,3 +4,4 @@ event_inherited();
 name="";
 scr=noone;
 cls=noone;
+alarm[1]=1;

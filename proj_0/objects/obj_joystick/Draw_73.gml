@@ -1,4 +1,4 @@
-if(md){
+if(md and !obj_bur.zoom and obj_bur.zoomed){
 	var r = clamp(point_distance(mdx,mdy,mouse_x,mouse_y),10,50);
 	var dir = point_direction(mdx,mdy,mouse_x,mouse_y);
 	var xx  = mdx + cos(degtorad(-dir)) * r;

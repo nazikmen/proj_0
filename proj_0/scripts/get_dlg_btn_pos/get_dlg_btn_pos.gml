@@ -8,7 +8,6 @@ function get_dlg_btn_pos(ind){
 	case 2:	return [256,212];
 	case 3:	return [256,412];
 	case 4:	return [256,612];
-
-
+	case 5:	return [256,612];
 	}
 }

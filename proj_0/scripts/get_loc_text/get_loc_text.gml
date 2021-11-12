@@ -92,6 +92,16 @@ function get_loc_text(key){
 				}
 			}
 		}
+		case "scan_radar":{
+			switch (global.locale){
+				case "en":{
+					return "Scan: $"+string(short_num(round(obj_bur.y*1.1)));	
+				}
+				case "ru":{
+					return "Сканировать: $"+string(short_num(round(obj_bur.y*1.1)));	
+				}
+			}
+		}
 		case "lorem50":{
 			switch (global.locale){
 				case "en":{

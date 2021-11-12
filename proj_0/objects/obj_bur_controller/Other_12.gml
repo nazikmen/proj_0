@@ -23,4 +23,3 @@ with(obj_bur){
 	ds_map_secure_save(mm,"player_info.map");
 	ds_map_destroy(mm);
 }
-sd("map saved")

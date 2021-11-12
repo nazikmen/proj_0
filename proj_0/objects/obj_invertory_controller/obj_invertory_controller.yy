@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_close",
-    "path": "sprites/spr_close/spr_close.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
