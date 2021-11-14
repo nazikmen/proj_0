@@ -85,11 +85,24 @@ case "sign_invertory":{
 	}
 break;
 }
-
+case "bur_interface":{
+	//[loc_x,loc_y,sz,scr,sprite,sprite2,text]
+	var arr_btns = [[-100,0,0.5,scr_open_dlg_upgrade_speed,noone,noone,"spd"],
+					[100,0,0.5,scr_open_dlg_upgrade_depth,noone,noone,"O²"],
+					[0,100,0.5,scr_open_dlg_upgrade_dohodnost,noone,noone,"Prib"],
+					[0,-100,0.5,scr_open_dlg_bur_invertory,noone,noone,"Inv"]]
+	for(var i=0;i<array_length(arr_btns);i++){
+		with(instance_create(x,y,obj_bur_interface_btn,depth-1)){
+			end_pos[0]=x+arr_btns[i][0];
+			end_pos[1]=y+arr_btns[i][1];
+			end_scale=arr_btns[i][2];
+			scr=arr_btns[i][3];
+			if(sprite_exists(arr_btns[i][4]) and arr_btns[i][4]!=noone)sprite_index=arr_btns[i][4];
+			if(sprite_exists(arr_btns[i][5]))spr_to_draw=arr_btns[i][5];
+			btn_text = arr_btns[i][6];
+		}
+	}
+break;
 }
-
-
-
-
-
+}
 }

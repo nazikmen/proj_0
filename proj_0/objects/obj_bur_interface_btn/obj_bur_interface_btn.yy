@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "btn_long_stone",
-    "path": "sprites/btn_long_stone/btn_long_stone.yy",
+    "name": "spr_cell_six_orange",
+    "path": "sprites/spr_cell_six_orange/spr_cell_six_orange.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,7 +20,12 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_bur_interface_btn","path":"objects/obj_bur_interface_btn/obj_bur_interface_btn.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_bur_interface_btn","path":"objects/obj_bur_interface_btn/obj_bur_interface_btn.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_bur_interface_btn","path":"objects/obj_bur_interface_btn/obj_bur_interface_btn.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":25,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_bur_interface_btn","path":"objects/obj_bur_interface_btn/obj_bur_interface_btn.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

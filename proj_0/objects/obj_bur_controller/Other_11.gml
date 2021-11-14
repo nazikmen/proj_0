@@ -1,7 +1,4 @@
 /// @description grid
-
-//var g = active_grids[4][0];
-
 active_grids[4][0] = word_gen_grid(active_grids[4][1][0],active_grids[4][1][1]);//центральный грид
 active_grid = active_grids[4][0];
 active_surf=active_grids[4][2];
@@ -32,13 +29,3 @@ active_grids[7][0] = word_gen_grid(active_grids[7][1][0],active_grids[7][1][1]);
 
 active_grids[8][1]=[mgp[0]+16*ceil_size,mgp[1]+16*ceil_size];//rb
 active_grids[8][0] = word_gen_grid(active_grids[8][1][0],active_grids[8][1][1]);
-
-//sd(active_grids[0][0]);
-//sd(active_grids[1][0]);
-//sd(active_grids[2][0]);
-//sd(active_grids[3][0]);
-//sd(active_grids[4][0]);
-//sd(active_grids[5][0]);
-//sd(active_grids[6][0]);
-//sd(active_grids[7][0]);
-//sd(active_grids[8][0]);

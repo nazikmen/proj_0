@@ -5,3 +5,4 @@ name="";
 scr=noone;
 cls=noone;
 alarm[1]=1;
+cls=instance_create(x,y,obj_close_dlg);

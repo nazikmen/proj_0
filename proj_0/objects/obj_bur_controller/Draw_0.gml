@@ -8,29 +8,11 @@ for(var i=0;i<array_length(active_grids);i++){
 		surface_set_target(active_grids[i][2]);
 		if(ds_exists(g,ds_type_grid)){
 			for(var w=0;w<ds_grid_width(g);w++){
-				//0 air
-				//1 grass
-				//2 dirt
-				//3 dirt bg
-				//4 stone
-				//5 stone bg
-				//g_pos[0]+
-				//g_pos[1]+
-			
 				for(var h=0;h<ds_grid_height(g);h++){
 					var _x = w*ceil_size+32;
 					var _y = h*ceil_size+32;
-					//if(_y == clamp(_y,obj_bur.y-global.game_height/2-100, obj_bur.y+global.game_height/2+100)){
-					//	if(_x == clamp(_x,obj_bur.x-global.game_width/2-100, obj_bur.x+global.game_width/2+100)){
-					
-							var ind = 0;
-							ind=ds_grid_get(g,w,h);
-							//if(ds_grid_get(grid,w,h)==2)c=c_black;
-							if(ind==6 or ind==7)draw_sprite(spr_blocks,4,_x,_y)
-							draw_sprite(spr_blocks,ind,_x,_y);
-					//	}
-					//}
-		
+					var ind = ds_grid_get(g,w,h);
+					scr_draw_world_blocks(ind,_x,_y);
 				}
 			}
 		}
@@ -47,6 +29,6 @@ var g_pos = active_grids[4][1];
 if(obj_bur.y < global.game_height+100){
 	for(var i=-2;i<ceil(global.game_width/ceil_size)+2;i++){
 		var st_x = ((obj_bur.x-global.game_width/2)-obj_bur.x%ceil_size);
-		draw_sprite(spr_blocks,1,st_x+ceil_size*i,64*9);
+		draw_sprite(spr_blocks,1,st_x+ceil_size*i,64*9+12);
 	}
 }

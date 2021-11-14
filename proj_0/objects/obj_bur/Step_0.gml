@@ -16,11 +16,16 @@ if(!finished_step){
 		y-=pre_pos[1]-other.y;
 	}
 	
-	var p = get_grid_pos();
+	
 	if(x == need_x and y == need_y){
 		
 		x-=x%64;
 		y-=y%64;
+		
+		
+		var p = get_grid_pos(x,y);
+		set_block_destroyed(p);
+		
 		if(place_meeting(x,y,obj_chest)){
 			with(obj_chest)if(point_distance(x,y,other.x,other.y)<100){
 				event_user(0);
@@ -30,39 +35,7 @@ if(!finished_step){
 			x=other.x;
 			y=other.y;
 		}
-		with(obj_bur_controller){
-			//0 air
-			//1 grass
-			//2 dirt
-			//3 dirt bg
-			//4 stone
-			//5 stone bg
-			switch(ds_grid_get(active_grid,p[0],p[1])){
-				case 2: ds_grid_set(active_grid,p[0],p[1],3);break;
-				case 4: ds_grid_set(active_grid,p[0],p[1],5);break;
-				case 6: {
-					var dr = irandom_range(100,300)
-					global.coins+=dr;
-					with(instance_create(other.x,other.y,obj_dmg_drop,other.depth-1)){
-						dmg_draw = dr;
-					}
-					ds_grid_set(active_grid,p[0],p[1],5);
-					with(obj_bur_controller)event_user(2);
-					break;
-				}
-				case 7: {
-					var dr = irandom_range(10,50)
-					global.coins+=dr;
-					with(instance_create(other.x,other.y,obj_dmg_drop,other.depth-1)){
-						dmg_draw = dr;
-					}
-					ds_grid_set(active_grid,p[0],p[1],5);
-					with(obj_bur_controller)event_user(2);
-					break;
-				}
-			}
-			surface_free(active_surf);
-		}
+		
 		finished_step=true;
 	}
 }

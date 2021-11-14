@@ -7,3 +7,4 @@ anim=false;
 scr=noone;
 text="";
 loc_text = true;
+def_scale = 1;
