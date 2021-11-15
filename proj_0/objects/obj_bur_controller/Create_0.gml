@@ -16,6 +16,7 @@ if(file_exists("player_info.map")){
 	_y-=_y%64;
 	with(instance_create(_x,_y,obj_bur,-10)){
 		kislorod = mm[?"kislorod"];
+		image_angle=360-90;
 	}
 	ds_map_destroy(mm);
 	player_pos = [_x,_y];

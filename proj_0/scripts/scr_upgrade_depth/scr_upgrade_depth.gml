@@ -3,7 +3,8 @@
 function scr_upgrade_depth(){
 	if(global.coins>=price){
 		global.coins-=price;
-		obj_bur.kislorod+=round(obj_bur.kislorod + obj_bur.kislorod*0.27);
+		obj_bur.kislorod+=round(obj_bur.kislorod*0.31);
 		bur_save();
+		with(obj_dlg)event_user(0);
 	}
 }

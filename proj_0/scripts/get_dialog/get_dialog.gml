@@ -33,11 +33,13 @@ break;
 case "dlg_upgrade_depth":{
 	price = get_price_upgrade_depth(obj_bur.kislorod);
 	with(instance_create(x,y+155,obj_btn)){
+		loc_text=false;
 		sprite_index = btn_cells_long;
-		def_scale=0.5;
+		def_scale=1;
 		depth=other.depth-1;
 		array_push(other.arr_objects,id);
 		price = other.price;
+		if(global.coins>=price)image_index=1;
 		text = "$"+string(short_num(price))
 		scr = scr_upgrade_depth;
 	}

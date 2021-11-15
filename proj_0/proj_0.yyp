@@ -101,6 +101,7 @@
     {"id":{"name":"obj_inv_sort_type_choose","path":"objects/obj_inv_sort_type_choose/obj_inv_sort_type_choose.yy",},"order":2,},
     {"id":{"name":"fnt_ui","path":"fonts/fnt_ui/fnt_ui.yy",},"order":1,},
     {"id":{"name":"sd","path":"scripts/sd/sd.yy",},"order":1,},
+    {"id":{"name":"spr_kislorod_bar","path":"sprites/spr_kislorod_bar/spr_kislorod_bar.yy",},"order":17,},
     {"id":{"name":"obj_mt","path":"objects/obj_mt/obj_mt.yy",},"order":0,},
     {"id":{"name":"spr_bur_drill","path":"sprites/spr_bur_drill/spr_bur_drill.yy",},"order":1,},
     {"id":{"name":"spr_dark","path":"sprites/spr_dark/spr_dark.yy",},"order":3,},

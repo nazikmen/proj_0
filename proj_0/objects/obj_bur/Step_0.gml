@@ -121,7 +121,10 @@ if(keyboard_check(ord("W"))){
 	image_angle=90;
 	if(check_can_move(need_x,need_y-64)){
 		need_y-=64;
-		
+		part_emitter_region(part_sys,smoke_emit,need_x,need_x,need_y,need_y,0,0);
+		part_emitter_burst(part_sys,smoke_emit,part_type_smoke,30);
+		//part_emitter_region(part_sys,iskr_emit,need_x,need_x,need_y-32,need_y-32,0,0);
+		//part_emitter_burst(part_sys,iskr_emit,part_type_iskr,15);
 		finished_step=false;
 		exit;
 	}
@@ -131,7 +134,10 @@ if(keyboard_check(ord("S"))){
 	image_angle=360-90;
 	if(check_can_move(need_x,need_y+64)){
 		need_y+=64;
-		
+		part_emitter_region(part_sys,smoke_emit,need_x,need_x,need_y,need_y,0,0);
+		part_emitter_burst(part_sys,smoke_emit,part_type_smoke,30);
+		//part_emitter_region(part_sys,iskr_emit,need_x,need_x,need_y+32,need_y+32,0,0);
+		//part_emitter_burst(part_sys,iskr_emit,part_type_iskr,15);
 		finished_step=false;
 		exit;
 	}
@@ -141,7 +147,10 @@ if(keyboard_check(ord("A"))){
 	image_angle=180;
 	if(check_can_move(need_x-64,need_y)){
 		need_x-=64;
-		
+		part_emitter_region(part_sys,smoke_emit,need_x,need_x,need_y,need_y,0,0);
+		part_emitter_burst(part_sys,smoke_emit,part_type_smoke,30);
+		//part_emitter_region(part_sys,iskr_emit,need_x-32,need_x-32,need_y,need_y,0,0);
+		//part_emitter_burst(part_sys,iskr_emit,part_type_iskr,15);
 		finished_step=false;
 		exit;
 	}
@@ -151,7 +160,10 @@ if(keyboard_check(ord("D"))){
 	image_angle=0;
 	if(check_can_move(need_x+64,need_y)){
 		need_x+=64;
-		
+		part_emitter_region(part_sys,smoke_emit,need_x,need_x,need_y,need_y,0,0);
+		part_emitter_burst(part_sys,smoke_emit,part_type_smoke,30);
+		//part_emitter_region(part_sys,iskr_emit,need_x+32,need_x+32,need_y,need_y,0,0);
+		//part_emitter_burst(part_sys,iskr_emit,part_type_iskr,15);
 		finished_step=false;
 		exit;
 	}

@@ -8,3 +8,4 @@ scr=noone;
 text="";
 loc_text = true;
 def_scale = 1;
+text_color = c_white;

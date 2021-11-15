@@ -1,1 +1,1 @@
-draw_text_transformed_color(x,y,"$"+short_num(dmg_draw),0.5,0.5,0,c_yellow,c_yellow,c_yellow,c_yellow,0.7);
+draw_text_transformed_color(x,y,"$"+short_num(dmg_draw),1.5,1.5,0,c_yellow,c_yellow,c_yellow,c_yellow,0.7);

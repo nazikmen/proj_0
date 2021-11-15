@@ -24,7 +24,8 @@ if(md and !obj_bur.zoom and obj_bur.zoomed){
 			image_angle=90;
 			if(check_can_move(need_x,need_y-64)){
 				need_y-=64;
-				
+				part_emitter_region(part_sys,smoke_emit,need_x,need_x,need_y,need_y,0,0);
+				part_emitter_burst(part_sys,smoke_emit,part_type_smoke,30);
 				finished_step=false;
 				exit;
 			}
@@ -34,7 +35,8 @@ if(md and !obj_bur.zoom and obj_bur.zoomed){
 			image_angle=360-90;
 			if(check_can_move(need_x,need_y+64)){
 				need_y+=64;
-				
+				part_emitter_region(part_sys,smoke_emit,need_x,need_x,need_y,need_y,0,0);
+				part_emitter_burst(part_sys,smoke_emit,part_type_smoke,30);
 				finished_step=false;
 				exit;
 			}
@@ -44,7 +46,8 @@ if(md and !obj_bur.zoom and obj_bur.zoomed){
 			image_angle=180;
 			if(check_can_move(need_x-64,need_y)){
 				need_x-=64;
-				
+				part_emitter_region(part_sys,smoke_emit,need_x,need_x,need_y,need_y,0,0);
+				part_emitter_burst(part_sys,smoke_emit,part_type_smoke,30);
 				finished_step=false;
 				exit;
 			}
@@ -54,7 +57,8 @@ if(md and !obj_bur.zoom and obj_bur.zoomed){
 			image_angle=0;
 			if(check_can_move(need_x+64,need_y)){
 				need_x+=64;
-				
+				part_emitter_region(part_sys,smoke_emit,need_x,need_x,need_y,need_y,0,0);
+				part_emitter_burst(part_sys,smoke_emit,part_type_smoke,30);
 				finished_step=false;
 				exit;
 			}
