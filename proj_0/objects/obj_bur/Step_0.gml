@@ -118,36 +118,40 @@ if(x != need_x or y != need_y or zoom or !zoomed)exit;
 
 if(keyboard_check(ord("W"))){
 	perehod_na_new_grid(need_x,need_y-64);
+	image_angle=90;
 	if(check_can_move(need_x,need_y-64)){
 		need_y-=64;
-		image_angle=90;
+		
 		finished_step=false;
 		exit;
 	}
 }
 if(keyboard_check(ord("S"))){
 	perehod_na_new_grid(need_x,need_y+64);
+	image_angle=360-90;
 	if(check_can_move(need_x,need_y+64)){
 		need_y+=64;
-		image_angle=360-90;
+		
 		finished_step=false;
 		exit;
 	}
 }
 if(keyboard_check(ord("A"))){
 	perehod_na_new_grid(need_x-64,need_y);
+	image_angle=180;
 	if(check_can_move(need_x-64,need_y)){
 		need_x-=64;
-		image_angle=180;
+		
 		finished_step=false;
 		exit;
 	}
 }
 if(keyboard_check(ord("D"))){
 	perehod_na_new_grid(need_x+64,need_y);
+	image_angle=0;
 	if(check_can_move(need_x+64,need_y)){
 		need_x+=64;
-		image_angle=0;
+		
 		finished_step=false;
 		exit;
 	}

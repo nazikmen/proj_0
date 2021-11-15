@@ -13,7 +13,22 @@ if(wave_act){
 }
 if(sprite_exists(sprite_index))draw_self();
 draw_sprite_ext(spr_bur_drill,drill_frame,x,y,image_xscale,image_yscale,image_angle,c_white,1);
-
+var dist = point_distance(x,y,x,kislorod*64);
+if(dist<91*64){//за 100 блоков до границы
+	var ind = 0;
+	if(dist == clamp(dist,50*64,91*64))ind = 0;
+	if(dist == clamp(dist,20*64,50*64))ind = 1;
+	if(dist == clamp(dist,0,20*64))ind = 2;
+	draw_sprite_ext(spr_kislorod_alarm,ind,x+32,y-32,1,1,0,c_white,kislorod_alpha);
+	if(kislorod_napr==0){
+		kislorod_alpha+=0.03;
+		if(kislorod_alpha>=1)kislorod_napr=1;
+	}
+	else{
+		kislorod_alpha-=0.03;
+		if(kislorod_alpha<=0)kislorod_napr=0;
+	}
+}
 var ri=shader_get_uniform(shd_rectCutOutSmooth,"v_rect");
 var bi=shader_get_uniform(shd_rectCutOutSmooth,"f_border");
 shader_set(shd_rectCutOutSmooth);

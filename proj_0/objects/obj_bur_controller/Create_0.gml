@@ -4,15 +4,20 @@ ceil_size = 64;
 global.coins = 0;
 
 var player_pos = [288-288%64, 612-612%64];
+var start_save = false;
 if(file_exists("player_info.map")){
 	var mm = ds_map_secure_load("player_info.map");
 	var _x = mm[?"x"];
 	var _y = mm[?"y"];
 	global.coins=mm[?"coins"];
-	ds_map_destroy(mm);
+	if(mm[?"kislorod"]==undefined)mm[?"kislorod"]=300;
+	if(mm[?"coins"]==undefined)mm[?"coins"]=0;
 	_x-=_x%64;
 	_y-=_y%64;
-	instance_create(_x,_y,obj_bur,-10);
+	with(instance_create(_x,_y,obj_bur,-10)){
+		kislorod = mm[?"kislorod"];
+	}
+	ds_map_destroy(mm);
 	player_pos = [_x,_y];
 }
 else {
@@ -22,6 +27,8 @@ else {
 	ds_map_add(mm,"x",player_pos[0]);
 	ds_map_add(mm,"y",player_pos[1]);
 	ds_map_add(mm,"coins",global.coins);
+	ds_map_add(mm,"kislorod",300);
+	start_save=true;
 }
 
 active_grid_pos = get_active_sector(player_pos[0],player_pos[1]);
@@ -31,6 +38,8 @@ active_grids = [[-1,[0,0],-1],			[-1,[0,0],-1],			 [-1,[0,0],-1],  //g0 g1 g2
 				[-1,[0,0],-1],[active_grid,active_grid_pos,active_surf],[-1,[0,0],-1],  //g3 x4 g5
 				[-1,[0,0],-1],			[-1,[0,0],-1],			[-1,[0,0],-1]];  //g6 g7 g8
 event_user(1);
+
+if(start_save)bur_save();
 				
 
 

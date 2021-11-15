@@ -30,6 +30,19 @@ case "options":{
 	}
 break;
 }
+case "dlg_upgrade_depth":{
+	price = get_price_upgrade_depth(obj_bur.kislorod);
+	with(instance_create(x,y+155,obj_btn)){
+		sprite_index = btn_cells_long;
+		def_scale=0.5;
+		depth=other.depth-1;
+		array_push(other.arr_objects,id);
+		price = other.price;
+		text = "$"+string(short_num(price))
+		scr = scr_upgrade_depth;
+	}
+break;
+}
 case "scaner":{
 	var cx = obj_bur.x-global.game_width/2;
 	var cy = obj_bur.y-global.game_height/2;

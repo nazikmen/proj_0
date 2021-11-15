@@ -21,36 +21,40 @@ if(md and !obj_bur.zoom and obj_bur.zoomed){
 
 		if(dir == clamp(dir,45,90+44)){//w
 			perehod_na_new_grid(need_x,need_y-64);
+			image_angle=90;
 			if(check_can_move(need_x,need_y-64)){
 				need_y-=64;
-				image_angle=90;
+				
 				finished_step=false;
 				exit;
 			}
 		}
 		if(dir == clamp(dir,180+45,360-44)){//s
 			perehod_na_new_grid(need_x,need_y+64);
+			image_angle=360-90;
 			if(check_can_move(need_x,need_y+64)){
 				need_y+=64;
-				image_angle=360-90;
+				
 				finished_step=false;
 				exit;
 			}
 		}
 		if(dir == clamp(dir,90+45,180+44)){//a
 			perehod_na_new_grid(need_x-64,need_y);
+			image_angle=180;
 			if(check_can_move(need_x-64,need_y)){
 				need_x-=64;
-				image_angle=180;
+				
 				finished_step=false;
 				exit;
 			}
 		}
 		if(dir == clamp(dir,0,44) or dir == clamp(dir,360-45,359)){//d
 			perehod_na_new_grid(need_x+64,need_y);
+			image_angle=0;
 			if(check_can_move(need_x+64,need_y)){
 				need_x+=64;
-				image_angle=0;
+				
 				finished_step=false;
 				exit;
 			}

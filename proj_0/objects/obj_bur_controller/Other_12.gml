@@ -20,6 +20,7 @@ with(obj_bur){
 	mm[?"x"]=need_x; 
 	mm[?"y"]=need_y;
 	mm[?"coins"]=global.coins;
+	mm[?"kislorod"]=obj_bur.kislorod;
 	ds_map_secure_save(mm,"player_info.map");
 	ds_map_destroy(mm);
 }
