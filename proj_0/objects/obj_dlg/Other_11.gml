@@ -1,20 +1,18 @@
 /// @description load
-if(room!=rm_bur){
-	x=256;
-	y=512;
+with(instance_create(x,y,obj_screenlock)){
+	other.scr = id;
+	par_obj = other.id;
+	ue = 0;
+	other.depth = depth-1;
 }
-scr=instance_create(x,y,obj_screenlock);
-scr.par_obj = id;
-scr.ue = 0;
-depth=scr.depth-1;
+cls = instance_create(x,y,obj_close_dlg,depth-2);
+with(cls)set_scale(get_zoom_scale());
+
 get_dialog(name);
 
-
-with(cls){
-	x=other.bbox_right;
-	y=other.bbox_top;
-	depth=other.depth-2;
+if(def_pos_close){
+	with(cls){
+		x = other.bbox_right;
+		y = other.bbox_top;
+	}
 }
-//rmk = instance_create(x,y,obj_ramka);
-//rmk.par_obj = id;
-//rmk.depth = depth-1;

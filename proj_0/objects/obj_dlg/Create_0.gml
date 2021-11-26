@@ -3,8 +3,7 @@
 event_inherited();
 name="";
 scr=noone;
-cls=noone;
 alarm[1]=1;
-cls=instance_create(x,y,obj_close_dlg);
-
+cls=noone;
+def_pos_close = true;
 arr_objects = [];//Инстансы диалога

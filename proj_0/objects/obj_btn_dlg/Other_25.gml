@@ -1,1 +1,1 @@
-script_execute(scr);
+if(script_exists(scr))script_execute(scr);

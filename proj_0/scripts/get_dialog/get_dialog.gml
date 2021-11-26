@@ -7,44 +7,59 @@ var scr_close=scr_close_dlg;
 //var scr_sgdm_upgrade = scr_sing_player_dm_up;
 var goto_menu = goto_main_menu;
 
+var centr = get_center_coords();
+
 switch name
 {
-case "options":{
+
+case "options_1":{
 	
-	sprite_index=spr_frame;
-	var arr=get_dlg_btn_pos(0);
-	with instance_create (arr[0],arr[1],obj_btn_dlg) 
-	{
-		sprite_index = spr_sound;
-		image_index = global.sound;
-		scr=scr_soundoff;
-		depth=other.depth-1;
-		loc_text_key = "sound_btn";
+	sprite_index=spr_panel_window;
+	
+	var arr=get_dlg_btn_pos(6);
+	with(instance_create(centr[0]+arr[0]*get_zoom_scale(),centr[1]+arr[1]*get_zoom_scale(),obj_btn_dlg,depth-1)){
+		sprite_index = spr_btn;
+		ind = 6;
+		scr = noone;
+		btn_text = "";
+		loc_text_key = "";
+		spr_text = noone;
+		set_scale(get_zoom_scale());
 	}
-	arr=get_dlg_btn_pos(1);
-	with instance_create (arr[0],arr[1],obj_btn_dlg) 
-	{
-		get_locale_spr_flag(global.locale);
-		scr=scr_switch_loc;
-		depth=other.depth-1;
+	
+	var arr=get_dlg_text_pos(0);
+	with(instance_create(centr[0]+arr[0]*get_zoom_scale(),centr[1]+arr[1]*get_zoom_scale(),obj_text_dlg,depth-1)){
+		ind = 0;
+		text = get_loc_text("lorem50");
+		text_size = 24;
+		text_width = clamp(sprite_get_width(other.sprite_index)-20,100,infinity);
+		set_scale(get_zoom_scale());
 	}
+	
 break;
 }
+
 case "dlg_upgrade_depth":{
-	price = get_price_upgrade_depth(obj_bur.kislorod);
-	with(instance_create(x,y+155,obj_btn)){
-		loc_text=false;
-		sprite_index = btn_cells_long;
-		def_scale=1;
-		depth=other.depth-1;
-		array_push(other.arr_objects,id);
-		price = other.price;
-		if(global.coins>=price)image_index=1;
-		text = "$"+string(short_num(price))
+	sprite_index = spr_panel_window;
+	var kisl = 300;
+	with(obj_bur){
+		kisl = kislorod;
+	}
+	
+	var arr=get_dlg_btn_pos(10);
+	with(instance_create(centr[0]+arr[0]*get_zoom_scale(),centr[1]+arr[1]*get_zoom_scale(),obj_btn_dlg,depth-1)){
+		price = get_price_upgrade_depth(kisl);
+		sprite_index = spr_btn;
+		ind = 10;
 		scr = scr_upgrade_depth;
+		btn_text = string(short_num(price));
+		loc_text_key = "";
+		spr_text = noone;
+		set_scale(get_zoom_scale());
 	}
 break;
 }
+
 case "scaner":{
 	var cx = obj_bur.x-global.game_width/2;
 	var cy = obj_bur.y-global.game_height/2;
