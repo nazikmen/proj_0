@@ -1,0 +1,1 @@
+if(os_type==os_windows)draw_pos_mouse = true;

@@ -1,0 +1,1 @@
+if(is_boss)image_index=44;

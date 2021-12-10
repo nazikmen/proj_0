@@ -1,0 +1,1 @@
+if(sprite_exists(spr_text))sprite_delete(spr_text);

@@ -1,0 +1,10 @@
+draw_self();
+if(image_blend==c_white){
+	if(point_draw_timer>0){
+		if(point_draw_timer>10){
+			draw_circle_color(x+point_draw_pos[0],y+point_draw_pos[1],5,c_red,c_red,0);
+		}
+		point_draw_timer--;
+		if(point_draw_timer==0)alarm[1]=irandom_range(1,7)*room_speed;
+	}
+}
